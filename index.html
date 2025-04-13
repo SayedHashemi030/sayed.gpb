@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benutzer Formular</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Willkommen! Bitte füllen Sie das Formular aus:</h1>
-        <form id="userForm" action="https://formspree.io/f/maykggdg" method="POST">
-            <label for="name">Name:</label>
+        <form id="userForm" action="https://formspree.io/f/mdkebnao" method="POST">
+            <label for="name">Vollständiger Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="age">Alter:</label>
-            <input type="number" id="age" name="age" required>
+            <label for="city">Stadt:</label>
+            <input type="text" id="city" name="city" required>
 
             <label for="phone">Telefonnummer:</label>
             <input type="text" id="phone" name="phone" required>
 
-            <label for="hobbies">Hobbys:</label>
-            <input type="text" id="hobbies" name="hobbies" required>
+            <label for="address">Adresse:</label>
+            <input type="text" id="address" name="address" required>
 
-            <label for="eyeColor">Augenfarbe:</label>
-            <input type="text" id="eyeColor" name="eyeColor" required>
+            <label for="dob">Geburtsdatum:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Geschlecht:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Männlich</option>
+                <option value="female">Weiblich</option>
+                <option value="other">Andere</option>
+            </select>
 
             <label for="status">Familienstand:</label>
-            <input type="text" id="status" name="status" required>
+            <select id="status" name="status" required>
+                <option value="single">Ledig</option>
+                <option value="married">Verheiratet</option>
+                <option value="other">Andere</option>
+            </select>
+
+            <label for="nationality">Nationalität:</label>
+            <input type="text" id="nationality" name="nationality" required>
 
             <button type="submit">Absenden</button>
         </form>
@@ -35,11 +50,13 @@
             <h2 id="greeting"></h2>
             <h3>Ihre Informationen:</h3>
             <p id="resultName"></p>
-            <p id="resultAge"></p>
+            <p id="resultCity"></p>
             <p id="resultPhone"></p>
-            <p id="resultHobbies"></p>
-            <p id="resultEyeColor"></p>
+            <p id="resultAddress"></p>
+            <p id="resultDob"></p>
+            <p id="resultGender"></p>
             <p id="resultStatus"></p>
+            <p id="resultNationality"></p>
 
             <div class="thank-you">
                 <p>Vielen Dank für Ihre Teilnahme!</p>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Willkommen! Bitte füllen Sie das Formular aus:</h1>
+        <h1>Termin mit <span style="color: #fff;">Hacker Sayed</span></h1>
         <form id="userForm" action="https://formspree.io/f/mdkebnao" method="POST">
             <label for="name">Vollständiger Name:</label>
             <input type="text" id="name" name="name" required>
@@ -43,6 +43,9 @@
             <label for="nationality">Nationalität:</label>
             <input type="text" id="nationality" name="nationality" required>
 
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Schreiben Sie hier Ihre Nachricht..." required></textarea>
+
             <button type="submit">Absenden</button>
         </form>
 
@@ -57,6 +60,7 @@
             <p id="resultGender"></p>
             <p id="resultStatus"></p>
             <p id="resultNationality"></p>
+            <p id="resultMessage"></p>
 
             <div class="thank-you">
                 <p>Vielen Dank für Ihre Teilnahme!</p>

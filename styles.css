@@ -8,31 +8,34 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #3a3a3a;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
-h1, h2, h3 {
+h1 {
     color: #00bfff;
+    margin-bottom: 30px;
 }
 
 form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 20px;
+    text-align: left;
 }
 
 label {
     font-weight: bold;
     color: #ccc;
+    grid-column: span 2;
 }
 
-input, select {
+input, select, textarea {
     padding: 10px;
     border: 1px solid #444;
     border-radius: 5px;
@@ -42,21 +45,25 @@ input, select {
     box-sizing: border-box;
 }
 
+textarea {
+    resize: vertical;
+}
+
 button {
     background-color: #00bfff;
     color: white;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.1em;
     grid-column: span 2;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #009acd;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .thank-you {

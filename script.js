@@ -1,7 +1,7 @@
 document.getElementById('userForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent actual form submission
+    event.preventDefault(); // جلوگیری از ارسال پیش‌فرض
 
-    // Collect form data
+    // گرفتن اطلاعات از فرم
     var name = document.getElementById('name').value;
     var age = document.getElementById('age').value;
     var phone = document.getElementById('phone').value;
@@ -9,7 +9,7 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     var eyeColor = document.getElementById('eyeColor').value;
     var status = document.getElementById('status').value;
 
-    // Show result
+    // نمایش اطلاعات وارد شده
     document.getElementById('result').style.display = 'block';
     document.getElementById('greeting').textContent = 'Vielen Dank, ' + name + '!';
     document.getElementById('resultName').textContent = 'Name: ' + name;
@@ -19,6 +19,6 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
     document.getElementById('resultEyeColor').textContent = 'Augenfarbe: ' + eyeColor;
     document.getElementById('resultStatus').textContent = 'Familienstand: ' + status;
 
-    // Optional: you can uncomment below if you still want the form to send email via Formspree
-    // this.submit();
+    // فرم ارسال می‌شود
+    event.target.submit();
 });

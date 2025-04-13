@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('userForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // جلوگیری از ارسال پیش‌فرض فرم
+        event.preventDefault(); // Prevent default form submission
 
-        // گرفتن اطلاعات از فرم
+        // Get form data
         const name = document.getElementById('name').value;
         const city = document.getElementById('city').value;
         const phone = document.getElementById('phone').value;
@@ -13,20 +13,20 @@ document.addEventListener('DOMContentLoaded', function () {
         const nationality = document.getElementById('nationality').value;
         const message = document.getElementById('message').value;
 
-        // نمایش اطلاعات وارد شده
+        // Display form results
         document.getElementById('result').style.display = 'block';
         document.getElementById('greeting').textContent = Vielen Dank, ${name}!;
         document.getElementById('resultName').textContent = Name: ${name};
-        document.getElementById('resultCity').textContent = Stadt: ${city};
-        document.getElementById('resultPhone').textContent = Telefonnummer: ${phone};
-        document.getElementById('resultAddress').textContent = Adresse: ${address};
-        document.getElementById('resultDob').textContent = Geburtsdatum: ${dob};
-        document.getElementById('resultGender').textContent = Geschlecht: ${gender};
-        document.getElementById('resultStatus').textContent = Familienstand: ${status};
-        document.getElementById('resultNationality').textContent = Nationalität: ${nationality};
-        document.getElementById('resultMessage').textContent = Nachricht: ${message};
+        document.getElementById('resultCity').textContent = City: ${city};
+        document.getElementById('resultPhone').textContent = Phone: ${phone};
+        document.getElementById('resultAddress').textContent = Address: ${address};
+        document.getElementById('resultDob').textContent = Date of Birth: ${dob};
+        document.getElementById('resultGender').textContent = Gender: ${gender};
+        document.getElementById('resultStatus').textContent = Marital Status: ${status};
+        document.getElementById('resultNationality').textContent = Nationality: ${nationality};
+        document.getElementById('resultMessage').textContent = Message: ${message};
 
-        // فرم ارسال می‌شود
+        // Submit the form
         event.target.submit();
     });
 });
